@@ -1,12 +1,12 @@
-package com.fm_java.service;
+package com.fm_java.fm_test.service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+import com.fm_java.fm_test.model.Client;
 import org.springframework.stereotype.Service;
 
-import com.fm_java.entity.Client;
 
 @Service
 public class ClientService {
@@ -14,7 +14,7 @@ public class ClientService {
   private AtomicLong sequence = new AtomicLong();
 
   public List<Client> trouverTous() {
-    return this.clients;
+    return clients;
   }
 
   public void ajouter(Client newClient) {
